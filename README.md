@@ -1,6 +1,10 @@
-Custom bitrix component
+
+
+## About Laravel
+
 Functions and technologies:
-Uses bitrix routing
-Runtime requests
-Pagination
-Ajax requests
+- Competent and fast ORM.
+- Uses bitrix routing.
+- Runtime requests.
+- Pagination.
+- Ajax requests.
