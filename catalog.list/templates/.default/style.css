@@ -1,0 +1,154 @@
+.badge_in-stock {
+    background-color: #7ffdbb; /* Пример цвета для 'В наличии' */
+}
+.badge_discount {
+    background-color: #FF69B4; /* Пример цвета для 'Скидка' */
+}
+.badge_on-the-way {
+    background-color: #5ba5fd; /* Пример цвета для 'В пути' */
+}
+.badge_vat {
+    background-color: #9370DB; /* Пример цвета для 'НДС' */
+}
+.badge_leasing {
+    background-color: #d0af04; /* Пример цвета для 'Лизинг' */
+}
+.badge_warranty {
+    background-color: #2370ff; /* Пример цвета для 'Гарантия' */
+}
+.hidden {
+    display: none!important;
+}
+.catalog_grid .card-product {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+}
+.catalog_grid .card-product:hover {
+    box-shadow: 0 10px 20px #b0cfe0 !important;
+    transform: translateY(-5px) !important;
+}
+.catalog_list .card-product__name{
+    -webkit-line-clamp: unset !important;
+    width: 450px !important;
+    white-space: normal !important;
+    overflow: hidden !important;
+    overflow-wrap: break-word; /* Стандартное свойство для переноса слов на новую строку */
+    text-overflow: unset !important;
+}
+.products-cards-slider .card-product__name {
+    -webkit-line-clamp: unset !important;
+    width: 330px !important;
+    white-space: normal !important;
+    overflow: hidden !important;
+    overflow-wrap: break-word; /* Стандартное свойство для переноса слов на новую строку */
+    text-overflow: unset !important;
+}
+.products-cards-slider .card-product__descr {
+    -webkit-line-clamp: 1 !important;
+}
+.catalog_grid .card-product__price-wrapper{
+    margin-left: 0 !important;
+}
+
+.catalog_grid .card-product__price {
+    width:205px!important;
+}
+.catalog_list .card-product__price-wrapper{
+    width: 240px !important;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-right: 30px;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.catalog-page .catalog_list .catalog__items .card-product .card-product__footer {
+    height: 100%;
+    grid-column: 4 / 5 !important;
+}
+
+.catalog-page .catalog_grid .catalog__items .card-product {
+    max-width: 401px !important;
+}
+
+.catalog-page .catalog_list .catalog__items .card-product .card-product__body .card-product__img, .catalog-page .catalog_list .catalog__items .card-product .card-product__body .card-product__img img {
+    width: 150px !important;
+    height: 150px;
+    object-fit: contain;
+}
+
+.select {
+    position: relative;
+}
+
+.select-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.select.open .select-icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.catalog-header-sort__item .button-select {
+    text-transform: none;
+    border: 1px solid #0F6DA1;
+    color: #0F6DA1;
+    min-width: 160px;
+}
+
+#reset {
+    text-transform: none;
+    color: white;
+    background: linear-gradient(180deg, #0F6DA1 0%, #41A4DB 100%);
+    min-width: 160px;
+}
+
+
+.catalog-header-sort__item .button-select.active,
+.catalog-header-sort__item .button-select:hover {
+    text-transform: none;
+    color: white !important;
+    background: linear-gradient(180deg, #0F6DA1 0%, #41A4DB 100%);
+    min-width: 160px;
+}
+
+
+.catalog-header-sort__item .button-select svg {
+    fill: none;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.button-select.active .arrow-icon,
+.button-select:hover .arrow-icon {
+    stroke: white !important;
+}
+
+.arrow-icon.flip, .svg-container.flip svg {
+    transform: rotate(180deg);
+    transform-origin: 5.5px 3.5px;
+}
+
+.catalog__items .card-product .product-config-amount {
+    display: flex;
+}
+.catalog__items .card-product .product-config-amount__button {
+    border: none;
+    background-color: unset;
+}
+.catalog__items .card-product .product-config-amount__control {
+    width: 5ch;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: none;
+}
+.catalog__items .card-product .product-config-amount__button_plus {
+    margin-left: -10px;
+}
